@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "torch-fplib"
+version = "0.1.0"
+description = "PyTorch implementation of GOM (Gaussian Overlap Matrix) fingerprints"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.0"]
+
+[project.optional-dependencies]
+test = ["numpy", "ase", "pytest"]
